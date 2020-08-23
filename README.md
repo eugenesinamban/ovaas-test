@@ -1,4 +1,4 @@
-# OVAAS test docker image
+# OpenVino model server test docker image
 
 ### Get aliases:
 

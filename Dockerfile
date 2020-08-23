@@ -6,8 +6,6 @@ RUN apt-get update && \
 
 COPY . /home
 
-# RUN pip install -r /home/client_requirements.txt
-
 RUN pip install futures==3.1.1 \
     grpcio==1.25.0 \
     grpcio-tools==1.25.0 \

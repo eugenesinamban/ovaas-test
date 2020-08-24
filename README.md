@@ -1,30 +1,35 @@
 # OpenVino model server test docker image
 
-### Get aliases:
+### How to use:
+Get aliases
 
 `source aliases.sh`
 
-### Create folders for images:
+Create folders for images
 
 `ovaas-init`
 
-### Copy target images to images folder
+Copy target images to images folder
 
-### Run containers:
+Run containers
 
 `ovaas-lcl`
 
-### On a separate terminal:
+On a separate terminal
 
-`ovaas-lcl-bash`
+```bash
 
-`cd home`
+ovaas-lcl-bash
 
-`python face_detection.py --batch_size 1 --width 600 --height 400 --input_images_dir images --output_dir results --grpc_address 172.21.0.3`
+cd home
+
+python face_detection.py --batch_size 1 --width 600 --height 400 --input_images_dir images --output_dir results --grpc_address 172.21.0.3
+
+```
 
 #### NOTE: grpc address might be different for your docker container.
-### get ipaddress by executing command:
+get ipaddress by executing command
 
 `docker network inspect openvino_dev-network`
 
-### then look for ip address of the ovaas model server
+then look for ip address of the ovaas model server
